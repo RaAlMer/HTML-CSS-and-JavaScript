@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Cluedo</title>
-        <script src="app.js"></script>
+        <script src="./app.js" type="text/javascript"></script>
     </head>
     <body>
         <h1>Clue</h1>
@@ -46,7 +46,7 @@
             <option value="pistol">pistol</option>
         </select>
         </p>
-
-        <button>Guess</button>
+        <button id="guess-btn" onclick="guess()">Guess</button>
+        <div id="answer"></div>
     </body>
 </html>

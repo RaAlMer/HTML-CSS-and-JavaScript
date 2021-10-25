@@ -178,19 +178,19 @@ let mrGreen = {
 
  let mystery = pickmystery();
 
- document.querySelector("button").onclick = guess;
+ document.querySelector("#guess-btn").onclick = guess();
 
  function guess() {
-   let guessedSuspect = document.querySelector('#suspect').value;
-   let guessedWeapon = document.querySelector('#weapon').value;
-   let guessedRoom = document.querySelector('#room').value;
+   let guessedSuspect = document.getElementById('suspect').value;
+   let guessedWeapon = document.getElementById('weapon').value;
+   let guessedRoom = document.getElementById('room').value;
    if (guessedSuspect === mystery.suspect.name 
     && guessedWeapon === mystery.weapon.name 
     && guessedRoom === mystery.room.name) {
-      alert("You guessed right! You win!");
+      document.getElementById('answer').innerHTML += '<p>You guessed right! You win!</p>';
    } else {
-      alert("You guessed wrong ...");
-      alert(mystery.suspect.name + ' killed Mr. Boddy in the ' + mystery.room.name + ' with the ' + mystery.weapon.name);
+      document.getElementById('answer').innerHTML += '<p>You guessed wrong ...</p>';
+      document.getElementById('answer').innerHTML += `<p>${mystery.suspect.name} killed Mr. Boddy in the ${mystery.room.name} with the ${mystery.weapon.name}`;
    }
    document.body.innerHTML = `<img src=${mystery.suspect.image}`;
  }
