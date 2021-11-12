@@ -192,5 +192,5 @@ let mrGreen = {
       document.getElementById('answer').innerHTML += '<p>You guessed wrong ...</p>';
       document.getElementById('answer').innerHTML += `<p>${mystery.suspect.name} killed Mr. Boddy in the ${mystery.room.name} with the ${mystery.weapon.name}`;
    }
-   document.body.innerHTML = `<img src=${mystery.suspect.image}`;
+   document.getElementById('pic').innerHTML = `<img src=${mystery.suspect.image}>`;
  }
