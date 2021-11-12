@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cluedo</title>
+        <script src="./app.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>Clue</h1>
+        <p><select type="text" id="suspect">
+            <option value="Jacob Green">Jacob Green</option>
+            <option value="Doctor Orchid">Doctor Orchid</option>
+            <option value="Victor Plum">Victor Plum</option>
+            <option value="Cassandra Scarlet">Cassandra Scarlet</option>
+            <option value="Eleanor Peacock">Eleanor Peacock</option>
+            <option value="Jack Mustard">Jack Mustard</option>
+        </select>
+            killed Mr. Boddy in the
+        <select type="text" id="room">
+            <option value="Dining Room">Dining Room</option>
+            <option value="Conservatory">Conservatory</option>
+            <option value="Kitchen">Kitchen</option>
+            <option value="Study">Study</option>
+            <option value="Library">Library</option>
+            <option value="Billiard Room">Billiard Room</option>
+            <option value="Lounge">Lounge</option>
+            <option value="Ballroom">Ballroom</option>
+            <option value="Hall">Hall</option>
+            <option value="Spa">Spa</option>
+            <option value="Living Room">Living Room</option>
+            <option value="Observatory">Observatory</option>
+            <option value="Theater">Theater</option>
+            <option value="Guest House">Guest House</option>
+            <option value="Patio">Patio</option>
+        </select>
+        with the
+        <select type="text" id="weapon">
+            <option value="rope">rope</option>
+            <option value="knife">knife</option>
+            <option value="candlestick">candlestick</option>
+            <option value="dumbbell">dumbbell</option>
+            <option value="poison">poison</option>
+            <option value="axe">axe</option>
+            <option value="bat">bat</option>
+            <option value="trophy">trophy</option>
+            <option value="pistol">pistol</option>
+        </select>
+        </p>
+        <button id="guess-btn" onclick="guess()">Guess</button>
+        <div id="answer"></div>
+        <div id = "pic"></div>
+    </body>
+</html>
